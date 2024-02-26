@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="JsonAssignment2._0.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+
+            <Entry x:Name="NameEntry" Text="{Binding NewUser.Username}" Placeholder="Name" TextColor= "Grey" FontSize="20"/>
+
+            <Entry x:Name="SurnameEntry" Text="{Binding NewUser.Surname}" Placeholder="Surname" TextColor="Grey" FontSize="20"/>
+
+            <Entry x:Name="EmailAddressEntry" Text="{Binding NewUser.EmailAddress}" Placeholder="Email Address" TextColor= "Grey" FontSize="20"/>
+
+            <Entry x:Name="BioEntry" Text="{Binding NewUser.Bio}" Placeholder="Bio" TextColor= "Grey" FontSize="20"/>
+
+            <Label x:Name="TextBox"/>
+            <StackLayout Orientation="Horizontal" Spacing="100" HorizontalOptions="Center" Margin="0,50,0,0">
+                <Button x:Name="Save"
+             Text="Save"
+             HeightRequest="50"
+             WidthRequest="200"
+             CornerRadius="20"
+             Clicked="Save_Clicked"/>
+                <Button x:Name="Load"
+             Text="Load"
+             HeightRequest="50"
+             WidthRequest="200"
+             CornerRadius="20"
+             Clicked="Load_Clicked"/>
+            </StackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
